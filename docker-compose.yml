@@ -1,0 +1,16 @@
+version: '3'
+services: 
+  train: 
+    image: fk23/samsungtrain:v1
+    ports:
+      - "8000:80"
+
+  bank:
+    image: fk23/samsungbank:v1
+    ports: 
+      - "8001:80"  
+
+  postpaid: 
+    image: fk23/samsungpostpaid:v1 
+    ports: 
+      - "8002:80"      
